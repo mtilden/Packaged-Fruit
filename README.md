@@ -1,1 +1,34 @@
 # Packaged-Fruit
+-- Name: Madison Tilden
+-- Date: 12/11/14
+-- Course: ITEC 320 Principles of Procedural Programming
+
+-- Purpose: There will be two input streams to the program: 
+-- one or more files specified in the command line and then standard input
+-- The files specified in the command line will contain information on 
+-- trees and samples. Read each of these files until end of file.
+-- The input files will contain data on between one and one thousand 
+-- trees, inclusive, and on between 0 and 20 samples per tree, also inclusive.
+-- The information for each tree will be a sequence of items as follows:
+-- The keyword "TREE".
+-- A tree identification string of exactly 7 letters or digits.
+-- After a tree identification string come a possibly empty sequence of
+-- data on fruit samples. Each piece of fruit will be introduced by the
+-- keyword "FRUIT", followed by three words to describe the 
+-- following characteristics, in this order:
+-- Size: small, midsize, large
+-- Firmness: soft, firm, hard
+-- Taste: bland, sweet, sour
+-- A tree with a given ID number can appear more than once in the data.
+ 
+-- Standard input will contain a sequence of commands that will direct
+-- the program's output. These commands determine program output and operation, as follows:
+--"Trees": Output only Tree id number and number of fruit samples
+--"Averages": Output as in Trees, plus the average and standard 
+-- deviation of each category for each tree.
+--"Fruits": Output as in Trees, plus each fruit and average and standard deviation as in Averages
+--"Tree ID": Output only Tree id number and number of fruit samples
+--"Average ID": Output as in Trees, plus the average and standard
+-- deviation of each category for the specified tree.
+--"Fruit ID": Output as in Trees, plus each fruit and average and standard deviation as in Averages
+--"Quit": Halt the program
